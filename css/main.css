@@ -14,11 +14,16 @@ html body .backgroundimg {
   width: 100%;
   height: auto;
 }
-html body .moneybag {
+html body .element {
   position: absolute;
   top: 0;
   left: 0;
 }
 html body .hidden {
   display: none;
+}
+html body .two-second {
+  -webkit-animation-duration: 1s;
+  /* Chrome, Safari, Opera */
+  animation-duration: 2s;
 }

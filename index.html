@@ -32,28 +32,38 @@
         <img src="./img/bg.svg" />
     </div>
     
-    <img class="moneybag hidden" src="img/pre-spill/moneybag1.svg"/>
-    <img class="moneybag hidden" src="img/pre-spill/moneybag2.svg"/>
-    <img class="moneybag hidden" src="img/pre-spill/moneybag3.svg"/>
-    <img class="moneybag hidden" src="img/pre-spill/moneybag4.svg"/>
-    <img class="moneybag hidden" src="img/pre-spill/moneybag5.svg"/>
-    <img class="moneybag hidden" src="img/pre-spill/moneybag6.svg"/>
+    <!-- CLEAN UP MONEY BAGS --> 
+    <img class="element moneybag hidden" src="img/pre-spill/moneybag1.svg"/>
+    <img class="element moneybag hidden" src="img/pre-spill/moneybag2.svg"/>
+    <img class="element moneybag hidden" src="img/pre-spill/moneybag3.svg"/>
+    <img class="element moneybag hidden" src="img/pre-spill/moneybag4.svg"/>
+    <img class="element moneybag hidden" src="img/pre-spill/moneybag5.svg"/>
+    <img class="element moneybag hidden" src="img/pre-spill/moneybag6.svg"/>
+    
+    <!-- MATERIAL COSTS TITLE -->
+    <img id="matcosttitle" class="element hidden" src="img/pre-spill/materialcoststitle.svg"/>
     
     <script>
-    
             $(document).ready(function() {
                 
+                var delayMult = 1; 
+                
                 $('.moneybag').each(function() {
-                    
                     $(this).waypoint(function() {
-                        $(this.element).addClass('animated bounceInDown'); 
+                        $(this.element).addClass('animated bounceInDown two-second'); 
                         $(this.element).removeClass('hidden');
-                        console.log($(this.element));
-                    }, { offset: -0.5 * $(window).height() });
+                    }, { offset: -0.2 * $(window).height() * delayMult });
+                    delayMult += 0.1;
                 });
+            
+                $('#matcosttitle').waypoint(function() {
+                    console.log('Im gay');
+                    $('#matcosttitle').addClass('animated fadeIn two-second'); 
+                    $('#matcosttitle').removeClass('hidden');
+                }, { offset: -0.25 * $(window).height()});
+                
                 
             });
-        
     </script>
 </body>
 
