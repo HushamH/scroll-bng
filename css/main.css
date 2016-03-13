@@ -14,15 +14,11 @@ html body .backgroundimg {
   width: 100%;
   height: auto;
 }
-html body .moneybags {
+html body .moneybag {
   position: absolute;
-  z-index: -100;
-  width: 100%;
-  height: auto;
-  display: block;
+  top: 0;
+  left: 0;
 }
-html body .moneybags {
-  position: absolute;
-  z-index: 100;
-  width: 18%;
+html body .hidden {
+  display: none;
 }

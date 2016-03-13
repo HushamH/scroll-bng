@@ -24,38 +24,37 @@
     <!--[if lt IE 9]><script src="javascripts/ie8-956878c5.js"></script><![endif]-->
     <!-- Header JS -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
-    <script src="./bower_components/wow/dist/wow.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            var wow = new WOW({
-                boxClass: 'wow', // animated element css class (default is wow)
-                animateClass: 'bounceInDown', // animation css class (default is animated)
-                offset: 1.2 * $(window).height(), // distance to the element when triggering the animation (default is 0)
-                mobile: true, // trigger animations on mobile devices (default is true)
-                live: true, // act on asynchronously loaded content (default is true)
-                callback: function (box) {
-                    // the callback is fired every time an animation is started
-                    // the argument that is passed in is the DOM node being
-                }
-                , scrollContainer: null // optional scroll container selector, otherwise use window
-            });
-            wow.init();
-        });
-    </script>
+    <script src="./js/node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
 </head>
 
 <body>
     <div class="backgroundimg">
         <img src="./img/bg.svg" />
     </div>
-    <div>
-        <img class="wow bounceInDown" src="img/pre-spill/moneybag1.svg" data-wow-duration="2s"/>
-        <img class="wow bounceInDown" src="img/pre-spill/moneybag2.svg" data-wow-duration="2s"/>
-        <img class="wow bounceInDown" src="img/pre-spill/moneybag3.svg" data-wow-duration="2s"/>
-        <img class="wow bounceInDown" src="img/pre-spill/moneybag4.svg" data-wow-duration="2s">
-        <img class="wow bounceInDown" src="img/pre-spill/moneybag5.svg" data-wow-duration="2s">
-        <img class="wow bounceInDown" src="img/pre-spill/moneybag6.svg" data-wow-duration="2s">
-    </div>
+    
+    <img class="moneybag hidden" src="img/pre-spill/moneybag1.svg"/>
+    <img class="moneybag hidden" src="img/pre-spill/moneybag2.svg"/>
+    <img class="moneybag hidden" src="img/pre-spill/moneybag3.svg"/>
+    <img class="moneybag hidden" src="img/pre-spill/moneybag4.svg"/>
+    <img class="moneybag hidden" src="img/pre-spill/moneybag5.svg"/>
+    <img class="moneybag hidden" src="img/pre-spill/moneybag6.svg"/>
+    
+    <script>
+    
+            $(document).ready(function() {
+                
+                $('.moneybag').each(function() {
+                    
+                    $(this).waypoint(function() {
+                        $(this.element).addClass('animated bounceInDown'); 
+                        $(this.element).removeClass('hidden');
+                        console.log($(this.element));
+                    }, { offset: -0.5 * $(window).height() });
+                });
+                
+            });
+        
+    </script>
 </body>
 
 </html>
