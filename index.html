@@ -42,17 +42,24 @@
                            "img/clean-up/halfclock.svg","img/clean-up/labour1.svg","img/clean-up/labour2.svg",
                            "img/clean-up/labour3.svg","img/clean-up/labour4.svg",
                            "img/clean-up/labourtitle.svg","img/clean-up/timetitle.svg",
-                           "img/clean-up/transportationtitle.svg","img/clean-up/cutruck1.svg",
+                           "img/clean-up/cutransportationtitle.svg","img/clean-up/cutruck1.svg",
                            "img/clean-up/cutruck2.svg","img/clean-up/cutruck3.svg","img/clean-up/cutruck4.svg",
                            "img/clean-up/cutruck5.svg","img/clean-up/cutruck6.svg","img/post-spill/disposal.svg",
-                           "img/post-spill/transportationtitle.svg","img/post-spill/trash1.svg",
+                           "img/post-spill/potransportationtitle.svg","img/post-spill/trash1.svg",
                            "img/post-spill/trash2.svg","img/post-spill/trash3.svg","img/post-spill/trash4.svg",
                            "img/post-spill/trash5.svg","img/post-spill/trash6.svg","img/post-spill/trash7.svg",
                            "img/post-spill/potruck1.svg","img/post-spill/potruck2.svg","img/post-spill/potruck3.svg",
                            "img/post-spill/potruck4.svg","img/post-spill/potruck5.svg","img/post-spill/potruck6.svg",
+                           "img/total-costs/moneybags1.svg","img/total-costs/moneybags2.svg",
+                           "img/total-costs/moneybags3.svg","img/total-costs/moneybags4.svg",
+                           "img/total-costs/moneybags5.svg","img/total-costs/moneybags6.svg",
+                           "img/total-costs/moneybags7.svg","img/total-costs/moneybags8.svg",
+                           "img/total-costs/moneybags11.svg","img/total-costs/moneybags12.svg",
+                           "img/total-costs/moneybags13.svg","img/total-costs/moneybags14.svg",
+                           "img/total-costs/moneybags15.svg","img/total-costs/moneybags16.svg"
                            ];
 
-            for (i=0; i < 15; i++) {
+            for (i=0; i < img_src.length; i++) {
                 var img = new Image();
                 var id_name = (/\/(\w+)\.svg/.exec(img_src[i]))[1];
                 $('#' + id_name)[0].src =  img_src[i];
@@ -101,6 +108,13 @@
 
     <!-- TRANSPORTATION TITLE -->
     <img id="transportationtitle" class="element hidden" src="img/blank.png" />
+    <img id="cutransportationtitle" class="element hidden" src="img/blank.png" />
+    
+    <!-- LABOUR GUYS --> 
+    <img id="labour1" class="element hidden" src="img/blank.png" />
+    <img id="labour2" class="element labourleft hidden" src="img/blank.png" />
+    <img id="labour3" class="element labourleft hidden" src="img/blank.png" />
+    <img id="labour4" class="element labourleft hidden" src="img/blank.png" />
 
     <!-- TIME -->
     <img id="clock1" class="element clockleft hidden" src="img/blank.png"/>
@@ -123,6 +137,42 @@
     <!-- TRASH TITLE -->
     <img id="disposal" class="element hidden" src="img/blank.png"/>
 
+    <!-- LABOUR TITLE -->
+    <img id="labourtitle" class="element hidden" src="img/blank.png" />
+    
+    <!-- POST SPILL TRUCKS -->
+    <img id="potruck3" class="element potruckleft hidden" src="img/blank.png" />
+    <img id="potruck2" class="element potruckleft hidden" src="img/blank.png" />
+    <img id="potruck1" class="element potruckleft hidden" src="img/blank.png" />
+    <img id="potruck6" class="element potruckright hidden" src="img/blank.png" />
+    <img id="potruck5" class="element potruckright hidden" src="img/blank.png" />
+    <img id="potruck4" class="element potruckright hidden" src="img/blank.png" />
+    
+    <!-- TRANSPORATION TITLE PO -->
+    <img id="potransportationtitle" class="element hidden" src="img/blank.png" />
+    
+    <!-- PRE SPILL MONEY BAGS -->
+    <img id="moneybags1" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags2" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags3" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags4" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags5" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags6" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags7" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags8" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags9" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags10" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags11" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags12" class="element tomoneybagright hidden" src="img/blank.png" />
+    <img id="moneybags13" class="element tomoneybagright hidden" src="img/blank.png" />
+    <img id="moneybags14" class="element tomoneybagright hidden" src="img/blank.png" />
+    <img id="moneybags15" class="element tomoneybagright hidden" src="img/blank.png" />
+    <img id="moneybags16" class="element tomoneybagright hidden" src="img/blank.png" />
+
+    <!-- PERCENTAGE -->
+    <img id="percentage" class="element hidden" src="img/blank.png" />
+    
+    
     <script>
         
         $(document).ready(function () {
@@ -181,7 +231,14 @@
                 });
                 delayMult += 0.1;
             });
-
+            
+            $('#transportationtitle').waypoint(function () {
+                $('#transportationtitle').addClass('animated fadeIn two-second');
+                $('#transportationtitle').removeClass('hidden');
+            }, {
+                offset: -0.30 * $(window).height()
+            });
+            
             $('.truckleft').each(function () {
                 $(this).waypoint(function () {
                     $(this.element).addClass('animated slideInRight two-second');
@@ -191,10 +248,21 @@
                 });
                 delayMult += 0.1;
             });
-
-            $('#transportationtitle').waypoint(function () {
-                $('#transportationtitle').addClass('animated fadeIn two-second');
-                $('#transportationtitle').removeClass('hidden');
+            
+            delayMult = 1; 
+            $('.labourleft').each(function () {
+                $(this).waypoint(function () {
+                    $(this.element).addClass('animated fadeIn two-second');
+                    $(this.element).removeClass('hidden');
+                }, {
+                    offset: -0.4 * $(window).height() * delayMult
+                });
+                delayMult += 0.2;
+            });
+            
+            $('#labour1').waypoint(function () {
+                $('#labour1').addClass('animated fadeIn two-second');
+                $('#labour1').removeClass('hidden');
             }, {
                 offset: -0.30 * $(window).height()
             });
@@ -238,7 +306,74 @@
                 $('#disposal').removeClass('hidden');
             }, {
                 offset: -0.40 * $(window).height()
+                offset: -0.4 * $(window).height()
             });
+            
+            $('#labourtitle').waypoint(function () {
+                $('#labourtitle').addClass('animated fadeIn two-second');
+                $('#labourtitle').removeClass('hidden');
+            }, {
+                offset: -0.35 * $(window).height()
+            });
+            
+            delayMult = 1; 
+            $('.potruckleft').each(function () {
+                $(this).waypoint(function () {
+                    $(this.element).addClass('animated slideInRight two-second');
+                    $(this.element).removeClass('hidden');
+                }, {
+                    offset: -0.45 * $(window).height() * delayMult
+                });
+                delayMult += 0.1;
+            });
+            
+            delayMult = 1; 
+            $('.potruckright').each(function () {
+                $(this).waypoint(function () {
+                    $(this.element).addClass('animated slideInLeft two-second');
+                    $(this.element).removeClass('hidden');
+                }, {
+                    offset: -0.45 * $(window).height() * delayMult
+                });
+                delayMult += 0.1;
+            });
+            
+            $('#potransportationtitle').waypoint(function () {
+                $('#potransportationtitle').addClass('animated fadeIn two-second');
+                $('#potransportationtitle').removeClass('hidden');
+            }, {
+                offset: -0.4 * $(window).height()
+            });
+            
+            delayMult = 1; 
+            $('.tomoneybagleft').each(function () {
+                $(this).waypoint(function () {
+                    $(this.element).addClass('animated bounceInLeft two-second');
+                    $(this.element).removeClass('hidden');
+                }, {
+                    offset: -0.55 * $(window).height() * delayMult
+                });
+                delayMult += 0.05;
+            });
+            
+            delayMult = 1; 
+            $('.tomoneybagright').each(function () {
+                $(this).waypoint(function () {
+                    $(this.element).addClass('animated bounceInRight two-second');
+                    $(this.element).removeClass('hidden');
+                }, {
+                    offset: -0.55 * $(window).height() * delayMult
+                });
+                delayMult += 0.05;
+            });
+            
+            $('#percentage').waypoint(function () {
+                $('#percentage').addClass('animated fadeIn two-second');
+                $('#percentage').removeClass('hidden');
+            }, {
+                offset: -0.5 * $(window).height()
+            });
+            
         });
     </script>
     
