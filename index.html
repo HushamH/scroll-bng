@@ -53,10 +53,10 @@
                            "img/total-costs/moneybags1.svg","img/total-costs/moneybags2.svg",
                            "img/total-costs/moneybags3.svg","img/total-costs/moneybags4.svg",
                            "img/total-costs/moneybags5.svg","img/total-costs/moneybags6.svg",
-                           "img/total-costs/moneybags7.svg","img/total-costs/moneybags8.svg",
+                           "img/total-costs/moneybags7.svg","img/total-costs/moneybags8.svg", "img/total-costs/moneybags9.svg", "img/total-costs/moneybags10.svg",
                            "img/total-costs/moneybags11.svg","img/total-costs/moneybags12.svg",
                            "img/total-costs/moneybags13.svg","img/total-costs/moneybags14.svg",
-                           "img/total-costs/moneybags15.svg","img/total-costs/moneybags16.svg"
+                           "img/total-costs/moneybags15.svg","img/total-costs/moneybags16.svg", "img/total-costs/percentage.svg"
                            ];
 
             for (i=0; i < img_src.length; i++) {
@@ -107,7 +107,6 @@
     <img id="cutruck4" class="element truckright hidden" src="img/blank.png" />
 
     <!-- TRANSPORTATION TITLE -->
-    <img id="transportationtitle" class="element hidden" src="img/blank.png" />
     <img id="cutransportationtitle" class="element hidden" src="img/blank.png" />
     
     <!-- LABOUR GUYS --> 
@@ -232,9 +231,9 @@
                 delayMult += 0.1;
             });
             
-            $('#transportationtitle').waypoint(function () {
-                $('#transportationtitle').addClass('animated fadeIn two-second');
-                $('#transportationtitle').removeClass('hidden');
+            $('#cutransportationtitle').waypoint(function () {
+                $('#cutransportationtitle').addClass('animated fadeIn two-second');
+                $('#cutransportationtitle').removeClass('hidden');
             }, {
                 offset: -0.30 * $(window).height()
             });
@@ -306,7 +305,6 @@
                 $('#disposal').removeClass('hidden');
             }, {
                 offset: -0.40 * $(window).height()
-                offset: -0.4 * $(window).height()
             });
             
             $('#labourtitle').waypoint(function () {
