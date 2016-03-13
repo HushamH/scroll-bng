@@ -8,7 +8,7 @@ html body {
   height: 100%;
   margin: 0;
 }
-html body #backgroundimg {
+html body .backgroundimg {
   position: absolute;
   z-index: -100;
   width: 100%;
