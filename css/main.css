@@ -19,3 +19,6 @@ html body .moneybag {
   z-index: 100;
   width: 18%;
 }
+html body .hidden {
+  display: none;
+}
