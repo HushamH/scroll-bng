@@ -26,20 +26,21 @@
     <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
     <script src="./bower_components/wow/dist/wow.min.js"></script>
     <script>
-        var wow = new WOW({
-            boxClass: 'moneybags', // animated element css class (default is wow)
-            animateClass: 'bounceInDown', // animation css class (default is animated)
-            offset: 1.2 * $(window).height(), // distance to the element when triggering the animation (default is 0)
-            mobile: true, // trigger animations on mobile devices (default is true)
-            live: true, // act on asynchronously loaded content (default is true)
-            callback: function (box) {
-                // the callback is fired every time an animation is started
-                // the argument that is passed in is the DOM node being animated
-                box.className = "moneybags bounceInDown backgroundimg";
-            }
-            , scrollContainer: null // optional scroll container selector, otherwise use window
+        $(document).ready(function () {
+            var wow = new WOW({
+                boxClass: 'wow', // animated element css class (default is wow)
+                animateClass: 'bounceInDown', // animation css class (default is animated)
+                offset: 1.2 * $(window).height(), // distance to the element when triggering the animation (default is 0)
+                mobile: true, // trigger animations on mobile devices (default is true)
+                live: true, // act on asynchronously loaded content (default is true)
+                callback: function (box) {
+                    // the callback is fired every time an animation is started
+                    // the argument that is passed in is the DOM node being
+                }
+                , scrollContainer: null // optional scroll container selector, otherwise use window
+            });
+            wow.init();
         });
-        wow.init();
     </script>
 </head>
 
@@ -48,12 +49,12 @@
         <img src="./img/bg.svg" />
     </div>
     <div>
-        <img class="moneybags bounceInDown backgroundimg hidden" src="img/pre-spill/moneybag1.svg" data-wow-duration="2s">
-        <img class="moneybags bounceInDown backgroundimg hidden" src="img/pre-spill/moneybag2.svg" data-wow-duration="2s" data-wow-delay="1s">
-        <img class="moneybags bounceInDown backgroundimg hidden" src="img/pre-spill/moneybag3.svg" data-wow-duration="2s" data-wow-delay="2s">
-        <img class="moneybags bounceInDown backgroundimg hidden" src="img/pre-spill/moneybag4.svg" data-wow-duration="2s" data-wow-delay="3s">
-        <img class="moneybags bounceInDown backgroundimg hidden" src="img/pre-spill/moneybag5.svg" data-wow-duration="2s" data-wow-delay="4s">
-        <img class="moneybags bounceInDown backgroundimg hidden" src="img/pre-spill/moneybag6.svg" data-wow-duration="2s" data-wow-delay="5s">
+        <img class="wow bounceInDown" src="img/pre-spill/moneybag1.svg" data-wow-duration="2s"/>
+        <img class="wow bounceInDown" src="img/pre-spill/moneybag2.svg" data-wow-duration="2s"/>
+        <img class="wow bounceInDown" src="img/pre-spill/moneybag3.svg" data-wow-duration="2s"/>
+        <img class="wow bounceInDown" src="img/pre-spill/moneybag4.svg" data-wow-duration="2s">
+        <img class="wow bounceInDown" src="img/pre-spill/moneybag5.svg" data-wow-duration="2s">
+        <img class="wow bounceInDown" src="img/pre-spill/moneybag6.svg" data-wow-duration="2s">
     </div>
 </body>
 
