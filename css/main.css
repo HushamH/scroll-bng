@@ -19,7 +19,7 @@ html body .element {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  height: auto;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -51,4 +51,25 @@ html body #moneybag6 {
 }
 html body #matcosttitle {
   background-image: url("../img/pre-spill/materialcoststitle.svg");
+}
+html body #warehouse1 {
+  background-image: url("../img/pre-spill/warehouse1.svg");
+}
+html body #warehouse2 {
+  background-image: url("../img/pre-spill/warehouse2.svg");
+}
+html body #warehouse3 {
+  background-image: url("../img/pre-spill/warehouse3.svg");
+}
+html body #warehouse4 {
+  background-image: url("../img/pre-spill/warehouse4.svg");
+}
+html body #warehouse5 {
+  background-image: url("../img/pre-spill/warehouse5.svg");
+}
+html body #warehouseright {
+  background-image: url("../img/pre-spill/warehouse6.svg");
+}
+html body #warehousingtitle {
+  background-image: url("../img/pre-spill/warehousingtitle.svg");
 }

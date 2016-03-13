@@ -44,15 +44,15 @@
     <div id="matcosttitle" class="element hidden"></div>
     
     <!-- CLEAN UP WAREHOUSES -->
-   <!-- <div  class="element warehouseleft hidden"><img src="img//pre-spill//warehouse3.svg"/></div>
-    <img class="element warehouseleft hidden" src="img//pre-spill//warehouse2.svg"/>
-    <img class="element warehouseleft hidden" src="img//pre-spill//warehouse1.svg"/>
-    <img class="element warehouseleft hidden" src="img//pre-spill//warehouse5.svg"/>
-    <img class="element warehouseleft hidden" src="img//pre-spill//warehouse4.svg"/>
+    <div id="warehouse3" class="element warehouseleft hidden"></div>
+    <div id="warehouse2" class="element warehouseleft hidden"></div>
+    <div id="warehouse1" class="element warehouseleft hidden"></div>
+    <div id="warehouse5" class="element warehouseleft hidden"></div>
+    <div id="warehouse4" class="element warehouseleft hidden"></div>
 
-    <img id="warehouseright" class="element hidden" src="img//pre-spill//warehouse6.svg"/>
+    <div id="warehouseright" class="element warehouseleft hidden"></div>
 
-    <img id="warehousingtitle" class="element hidden" src="img/pre-spill//warehousingtitle.svg"/>-->
+    <div id="warehousingtitle" class="element hidden"></div>
 
 
     <script>
@@ -73,7 +73,7 @@
                     $('#matcosttitle').removeClass('hidden');
                 }, { offset: -0.15 * $(window).height()});
 
-               /* $('.warehouseleft').each(function() {
+               $('.warehouseleft').each(function() {
                     $(this).waypoint(function() {
                         $(this.element).addClass('animated slideInLeft two-second');
                         $(this.element).removeClass('hidden');
@@ -89,7 +89,7 @@
                 $('#warehousingtitle').waypoint(function() {
                     $('#warehousingtitle').addClass('animated fadeIn two-second');
                     $('#warehousingtitle').removeClass('hidden');
-                }, { offset: -0.24 * $(window).height()});*/
+                }, { offset: -0.24 * $(window).height()});
             });
         
     </script>
