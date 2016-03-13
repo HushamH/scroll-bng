@@ -25,7 +25,39 @@
     <!-- Header JS -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
     <script src="./js/node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
-    
+    <script type="text/javascript">
+        $(document).ready(function() {
+            // Pre-load images.
+    //        var images = $('img').context.images;
+            var images_arr = [];
+            var img_src = ["img/bg.svg",
+                           'img/pre-spill/moneybag1.svg',"img/pre-spill/moneybag2.svg","img/pre-spill/moneybag3.svg",
+                           "img/pre-spill/moneybag4.svg","img/pre-spill/moneybag5.svg","img/pre-spill/moneybag6.svg",
+                           "img/pre-spill/materialcoststitle.svg","img/pre-spill/warehouse1.svg",
+                           "img/pre-spill/warehouse3.svg","img/pre-spill/warehouse5.svg",
+                           'img/pre-spill/warehouse6.svg',"img/pre-spill/warehousingtitle.svg",
+                           "img/clean-up/clock1.svg","img/clean-up/clock3.svg","img/clean-up/clock4.svg",
+                           "img/clean-up/halfclock.svg","img/clean-up/labour1.svg","img/clean-up/labour2.svg",
+                           "img/clean-up/labour3.svg","img/clean-up/labour4.svg",
+                           "img/clean-up/labourtitle.svg","img/clean-up/timetitle.svg",
+                           "img/clean-up/transportationtitle.svg","img/clean-up/truck1.svg",
+                           "img/clean-up/truck2.svg","img/clean-up/truck3.svg","img/clean-up/truck4.svg",
+                           "img/clean-up/truck5.svg","img/clean-up/truck6.svg","img/post-spill/disposal.svg",
+                           "img/post-spill/transportationtitle.svg","img/post-spill/trash1.svg",
+                           "img/post-spill/trash2.svg","img/post-spill/trash3.svg","img/post-spill/trash4.svg",
+                           "img/post-spill/trash5.svg","img/post-spill/trash6.svg","img/post-spill/trash7.svg",
+                           "img/post-spill/truck1.svg","img/post-spill/truck2.svg","img/post-spill/truck3.svg",
+                           "img/post-spill/truck4.svg","img/post-spill/truck5.svg","img/post-spill/truck6.svg",
+                           ];
+
+            for (i=0; i < 7; i++) {
+                var img = new Image();
+                var id_name = (/\/(\w+)\.svg/.exec(img_src[i]))[1];
+                $('#' + id_name)[0].src =  img_src[i];
+            }
+
+        });
+    </script>
 </head>
 
 <body>
@@ -50,8 +82,8 @@
                     $(this).waypoint(function() {
                         $(this.element).addClass('animated bounceInDown two-second'); 
                         $(this.element).removeClass('hidden');
-                    }, { offset: -0.2 * $(window).height() * delayMult });
-                    delayMult += 0.1;
+                    }, { offset: -0.075 * $(window).height() * delayMult });
+                    delayMult += 0.2;
                 });
             
                 $('#matcosttitle').waypoint(function() {
@@ -79,38 +111,7 @@
             });
         
     </script>
-    <script type="text/javascript">
-        // Pre-load images.
-//        var images = $('img').context.images;
-        var images_arr = [];
-        var img_src = ["img/bg.svg",
-                       'img/pre-spill/moneybag1.svg',"img/pre-spill/moneybag2.svg","img/pre-spill/moneybag3.svg",
-                       "img/pre-spill/moneybag4.svg","img/pre-spill/moneybag5.svg","img/pre-spill/moneybag6.svg",
-                       "img/pre-spill/materialcoststitle.svg","img/pre-spill/warehouse1.svg",
-                       "img/pre-spill/warehouse3.svg","img/pre-spill/warehouse5.svg",
-                       'img/pre-spill/warehouse6.svg',"img/pre-spill/warehousingtitle.svg",
-                       "img/clean-up/clock1.svg","img/clean-up/clock3.svg","img/clean-up/clock4.svg",
-                       "img/clean-up/halfclock.svg","img/clean-up/labour1.svg","img/clean-up/labour2.svg",
-                       "img/clean-up/labour3.svg","img/clean-up/labour4.svg",
-                       "img/clean-up/labourtitle.svg","img/clean-up/timetitle.svg",
-                       "img/clean-up/transportationtitle.svg","img/clean-up/truck1.svg",
-                       "img/clean-up/truck2.svg","img/clean-up/truck3.svg","img/clean-up/truck4.svg",
-                       "img/clean-up/truck5.svg","img/clean-up/truck6.svg","img/post-spill/disposal.svg",
-                       "img/post-spill/transportationtitle.svg","img/post-spill/trash1.svg",
-                       "img/post-spill/trash2.svg","img/post-spill/trash3.svg","img/post-spill/trash4.svg",
-                       "img/post-spill/trash5.svg","img/post-spill/trash6.svg","img/post-spill/trash7.svg",
-                       "img/post-spill/truck1.svg","img/post-spill/truck2.svg","img/post-spill/truck3.svg",
-                       "img/post-spill/truck4.svg","img/post-spill/truck5.svg","img/post-spill/truck6.svg",
-                       ];
-        
-        for (i=0; i < 7; i++) {
-            var img = new Image();
-            var id_name = (/\/(\w+)\.svg/.exec(img_src[i]))[1];
-            console.log($('#' + id_name));
-            $('#' + id_name)[0].src =  img_src[i];
-        }
-        
-    </script>
+    
 </body>
 
 </html>
