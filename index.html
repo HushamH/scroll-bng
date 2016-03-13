@@ -100,7 +100,28 @@
     <img id="cutruck4" class="element truckright hidden" src="img/blank.png" />
 
     <!-- TRANSPORTATION TITLE -->
-    <img id="transportationtitle" class="element hidden" src="img/clean-up/transportationtitle.svg" />
+    <img id="transportationtitle" class="element hidden" src="img/blank.png" />
+
+    <!-- TIME -->
+    <img id="clock1" class="element clockleft hidden" src="img/blank.png"/>
+    <img id="halfclock" class="element clockleft hidden" src="img/blank.png"/>
+    <img id="clock3" class="element clockleft hidden" src="img/blank.png"/>
+    <img id="clock4" class="element hidden" src="img/blank.png"/>
+
+    <!-- TIME TITLE -->
+    <img id="timetitle" class="element hidden" src="img/blank.png"/>
+
+    <!-- DISPOSAL -->
+    <img id="trash1" class="element trash hidden" src="img/blank.png"/>
+    <img id="trash2" class="element trash hidden" src="img/blank.png"/>
+    <img id="trash3" class="element trash hidden" src="img/blank.png"/>
+    <img id="trash4" class="element trash hidden" src="img/blank.png"/>
+    <img id="trash5" class="element trash hidden" src="img/blank.png"/>
+    <img id="trash6" class="element trash hidden" src="img/blank.png"/>
+    <img id="trash7" class="element hidden" src="img/blank.png"/>
+
+    <!-- TRASH TITLE -->
+    <img id="disposal" class="element hidden" src="img/blank.png"/>
 
     <script>
         
@@ -176,6 +197,47 @@
                 $('#transportationtitle').removeClass('hidden');
             }, {
                 offset: -0.30 * $(window).height()
+            });
+
+            $('.clockleft').each(function () {
+                $(this).waypoint(function () {
+                    $(this.element).addClass('animated slideInLeft two-second');
+                    $(this.element).removeClass('hidden');
+                }, {
+                    offset: -0.37 * $(window).height() * delayMult
+                });
+                delayMult += 0.1;
+            });
+
+            $('#clock4').waypoint(function () {
+                $('#clock4').addClass('animated slideInRight two-second');
+                $('#clock4').removeClass('hidden');
+            }, {
+                offset: -0.37 * $(window).height()
+            });
+
+            $('#timetitle').waypoint(function () {
+                $('#timetitle').addClass('animated fadeIn two-second');
+                $('#timetitle').removeClass('hidden');
+            }, {
+                offset: -0.35 * $(window).height()
+            });
+
+            $('.trash').each(function () {
+                $(this).waypoint(function () {
+                    $(this.element).addClass('animated slideInLeft two-second');
+                    $(this.element).removeClass('hidden');
+                }, {
+                    offset: -0.43 * $(window).height() * delayMult
+                });
+                delayMult += 0.1;
+            });
+
+            $('#disposal').waypoint(function () {
+                $('#disposal').addClass('animated fadeIn two-second');
+                $('#disposal').removeClass('hidden');
+            }, {
+                offset: -0.40 * $(window).height()
             });
         });
     </script>
