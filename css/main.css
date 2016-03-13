@@ -18,6 +18,10 @@ html body .element {
   position: absolute;
   top: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 html body .hidden {
   display: none;
@@ -26,4 +30,25 @@ html body .two-second {
   -webkit-animation-duration: 1s;
   /* Chrome, Safari, Opera */
   animation-duration: 2s;
+}
+html body #moneybag1 {
+  background-image: url("../img/pre-spill/moneybag1.svg");
+}
+html body #moneybag2 {
+  background-image: url("../img/pre-spill/moneybag2.svg");
+}
+html body #moneybag3 {
+  background-image: url("../img/pre-spill/moneybag3.svg");
+}
+html body #moneybag4 {
+  background-image: url("../img/pre-spill/moneybag4.svg");
+}
+html body #moneybag5 {
+  background-image: url("../img/pre-spill/moneybag5.svg");
+}
+html body #moneybag6 {
+  background-image: url("../img/pre-spill/moneybag6.svg");
+}
+html body #matcosttitle {
+  background-image: url("../img/pre-spill/materialcoststitle.svg");
 }
