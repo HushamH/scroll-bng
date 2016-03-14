@@ -28,7 +28,7 @@
     <script type="text/javascript">
         $(document).ready(function() {
             var images_arr = [];
-            var img_src = ["img/bg.svg",
+            var img_src = ["img/bg1.svg",
                            'img/pre-spill/premoneybag1.svg',"img/pre-spill/premoneybag2.svg",
                            "img/pre-spill/premoneybag3.svg", "img/pre-spill/premoneybag4.svg",
                            "img/pre-spill/premoneybag5.svg","img/pre-spill/premoneybag6.svg",
@@ -59,7 +59,7 @@
 
             for (i=0; i < img_src.length; i++) {
                 var img = new Image();
-                var id_name = (/\/(\w+)\.svg/.exec(img_src[i]))[1];
+                var id_name = (/\/([\w\d]+)\.svg/.exec(img_src[i]))[1];
                 $('#' + id_name)[0].src =  img_src[i];
                 console.log( $('#' + id_name)[0].src);
             }
@@ -70,7 +70,7 @@
 
 <body>
     <div class="backgroundimg">
-        <img id="bg" src="img/blank.png" />
+        <img id="bg1" src="img/blank.png" />
     </div>
 
     <!-- PRE SPILL MONEY BAGS -->
