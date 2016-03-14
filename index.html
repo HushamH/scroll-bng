@@ -98,12 +98,19 @@
     <img id="warehousingtitle" class="element hidden" src="img/blank.png" />
 
     <!-- CLEAN UP TRUCKS -->
+
+    <img id="cutruck4" class="element truckright hidden" src="img/blank.png" />
+    <img id="cutruck5" class="element truckright hidden" src="img/blank.png" />
     <img id="cutruck3" class="element truckleft hidden" src="img/blank.png" />
     <img id="cutruck2" class="element truckleft hidden" src="img/blank.png" />
-    <img id="cutruck1" class="element truckleft hidden" src="img/blank.png" />
     <img id="cutruck6" class="element truckright hidden" src="img/blank.png" />
-    <img id="cutruck5" class="element truckright hidden" src="img/blank.png" />
-    <img id="cutruck4" class="element truckright hidden" src="img/blank.png" />
+    <img id="cutruck1" class="element truckleft hidden" src="img/blank.png" />
+
+
+
+
+
+
 
     <!-- TRANSPORTATION TITLE -->
     <img id="cutransportationtitle" class="element hidden" src="img/blank.png" />
@@ -174,49 +181,43 @@
     <script>
         $(document).ready(function () {
 
-            var delayMult = 1;
-
             $('.moneybag').each(function () {
                 $(this).waypoint(function () {
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.075 * $(window).height()
+                    offset: -0.127 * $(window).height()
                 });
-                delayMult += 0.2;
             });
 
             $('#materialcoststitle').waypoint(function () {
                 $('#materialcoststitle').addClass('animated fadeIn two-second');
                 $('#materialcoststitle').removeClass('hidden');
             }, {
-                offset: -0.075 * $(window).height()
+                offset: -0.127 * $(window).height()
             });
-            
-            delayMult = 1;
-            
+                        
             $('.warehouseleft').each(function () {
                 $(this).waypoint(function () {
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.08 * $(window).height()
+                    offset: -0.34 * $(window).height()
                 });
-                delayMult += 0.2;
             });
 
             $('#warehouse6').waypoint(function () {
                 $('#warehouse6').addClass('animated fadeIn two-second');
                 $('#warehouse6').removeClass('hidden');
             }, {
-                offset: -0.08 * $(window).height()
+                offset: -0.34 * $(window).height()
             });
 
             $('#warehousingtitle').waypoint(function () {
                 $('#warehousingtitle').addClass('animated fadeIn two-second');
                 $('#warehousingtitle').removeClass('hidden');
             }, {
-                offset: -0.08* $(window).height()
+                offset: -0.34 * $(window).height()
             });
 
             $('.truckright').each(function () {
@@ -224,16 +225,15 @@
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.09 * $(window).height()
+                    offset: -0.89 * $(window).height()
                 });
-                delayMult += 0.1;
             });
             
             $('#cutransportationtitle').waypoint(function () {
                 $('#cutransportationtitle').addClass('animated fadeIn two-second');
                 $('#cutransportationtitle').removeClass('hidden');
             }, {
-                offset: -0.09 * $(window).height()
+                offset: -0.89 * $(window).height()
             });
             
             $('.truckleft').each(function () {
@@ -241,34 +241,31 @@
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.09 * $(window).height()
+                    offset: -0.89 * $(window).height()
                 });
-                delayMult += 0.1;
             });
             
-            delayMult = 1; 
             $('.labourleft').each(function () {
                 $(this).waypoint(function () {
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.095 * $(window).height()
+                    offset: -1.32 * $(window).height()
                 });
-                delayMult += 0.2;
             });
             
             $('#labour1').waypoint(function () {
                 $('#labour1').addClass('animated fadeIn two-second');
                 $('#labour1').removeClass('hidden');
             }, {
-                offset: -0.095 * $(window).height()
+                offset: -1.32 * $(window).height()
             });
 
             $('#labourtitle').waypoint(function () {
                 $('#labourtitle').addClass('animated fadeIn two-second');
                 $('#labourtitle').removeClass('hidden');
             }, {
-                offset: -0.095 * $(window).height()
+                offset: -1.32 * $(window).height()
             });
 
             $('.clockleft').each(function () {
@@ -276,98 +273,88 @@
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.1 * $(window).height()
+                    offset: -1.6 * $(window).height()
                 });
-                delayMult += 0.1;
             });
 
             $('#clock4').waypoint(function () {
                 $('#clock4').addClass('animated fadeIn two-second');
                 $('#clock4').removeClass('hidden');
             }, {
-                offset: -0.1 * $(window).height()
+                offset: -1.6 * $(window).height()
             });
 
             $('#timetitle').waypoint(function () {
                 $('#timetitle').addClass('animated fadeIn two-second');
                 $('#timetitle').removeClass('hidden');
             }, {
-                offset: -0.1 * $(window).height()
-            });
-
-            $('.trash').each(function () {
-                $(this).waypoint(function () {
-                    $(this.element).addClass('animated fadeIn two-second');
-                    $(this.element).removeClass('hidden');
-                }, {
-                    offset: -0.105 * $(window).height()
-                });
-                delayMult += 0.1;
-            });
-
-            $('#disposal').waypoint(function () {
-                $('#disposal').addClass('animated fadeIn two-second');
-                $('#disposal').removeClass('hidden');
-            }, {
-                offset: -0.105 * $(window).height()
+                offset: -1.6 * $(window).height()
             });
             
-            delayMult = 1; 
             $('.potruckleft').each(function () {
                 $(this).waypoint(function () {
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.110 * $(window).height()
+                    offset: -2.185 * $(window).height()
                 });
-                delayMult += 0.1;
             });
             
-            delayMult = 1; 
             $('.potruckright').each(function () {
                 $(this).waypoint(function () {
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.110 * $(window).height()
+                    offset: -2.185 * $(window).height()
                 });
-                delayMult += 0.1;
             });
             
             $('#potransportationtitle').waypoint(function () {
                 $('#potransportationtitle').addClass('animated fadeIn two-second');
                 $('#potransportationtitle').removeClass('hidden');
             }, {
-                offset: -0.110 * $(window).height()
+                offset: -2.185 * $(window).height()
             });
             
-            delayMult = 1; 
+             $('.trash').each(function () {
+                $(this).waypoint(function () {
+                    $(this.element).addClass('animated fadeIn two-second');
+                    $(this.element).removeClass('hidden');
+                }, {
+                    offset: -2.5 * $(window).height()
+                });
+            });
+
+            $('#disposal').waypoint(function () {
+                $('#disposal').addClass('animated fadeIn two-second');
+                $('#disposal').removeClass('hidden');
+            }, {
+                offset: -2.5* $(window).height()
+            });
+            
             $('.tomoneybagleft').each(function () {
                 $(this).waypoint(function () {
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.115 * $(window).height()
+                    offset: -3.2 * $(window).height()
                 });
-                delayMult += 0.05;
             });
             
-            delayMult = 1; 
             $('.tomoneybagright').each(function () {
                 $(this).waypoint(function () {
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.115 * $(window).height()
+                    offset: -3.2 * $(window).height()
                 });
-                delayMult += 0.05;
             });
             
             $('#percentage').waypoint(function () {
-                $('#percentage').addClass('animated fadeIn two-second');
+                $('#percentage').addClass('animated fadeIn three-second');
                 $('#percentage').removeClass('hidden');
             }, {
-                offset: -0.116 * $(window).height()
+                offset: -3.3 * $(window).height()
             });
             
         });
