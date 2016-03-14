@@ -30,7 +30,7 @@
             // Pre-load images.
     //        var images = $('img').context.images;
             var images_arr = [];
-            var img_src = ["img/bg.svg",
+            var img_src = ["img/bg1.svg",
                            'img/pre-spill/premoneybag1.svg',"img/pre-spill/premoneybag2.svg",
                            "img/pre-spill/premoneybag3.svg", "img/pre-spill/premoneybag4.svg",
                            "img/pre-spill/premoneybag5.svg","img/pre-spill/premoneybag6.svg",
@@ -61,7 +61,7 @@
 
             for (i=0; i < img_src.length; i++) {
                 var img = new Image();
-                var id_name = (/\/(\w+)\.svg/.exec(img_src[i]))[1];
+                var id_name = (/\/([\w\d]+)\.svg/.exec(img_src[i]))[1];
                 $('#' + id_name)[0].src =  img_src[i];
                 console.log( $('#' + id_name)[0].src);
             }
@@ -72,7 +72,7 @@
 
 <body>
     <div class="backgroundimg">
-        <img id="bg" src="img/blank.png" />
+        <img id="bg1" src="img/blank.png" />
     </div>
 
     <!-- PRE SPILL MONEY BAGS -->
@@ -151,23 +151,23 @@
     <img id="potransportationtitle" class="element hidden" src="img/blank.png" />
     
     <!-- PRE SPILL MONEY BAGS -->
-    <img id="moneybags1" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags2" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags3" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags4" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags5" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags6" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags7" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags8" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags9" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags10" class="element tomoneybagleft hidden" src="img/blank.png" />
     <img id="moneybags11" class="element tomoneybagleft hidden" src="img/blank.png" />
-    <img id="moneybags12" class="element tomoneybagright hidden" src="img/blank.png" />
-    <img id="moneybags13" class="element tomoneybagright hidden" src="img/blank.png" />
-    <img id="moneybags14" class="element tomoneybagright hidden" src="img/blank.png" />
-    <img id="moneybags15" class="element tomoneybagright hidden" src="img/blank.png" />
+    <img id="moneybags10" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags9" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags8" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags7" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags6" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags5" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags4" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags3" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags2" class="element tomoneybagleft hidden" src="img/blank.png" />
+    <img id="moneybags1" class="element tomoneybagleft hidden" src="img/blank.png" />
     <img id="moneybags16" class="element tomoneybagright hidden" src="img/blank.png" />
-
+    <img id="moneybags15" class="element tomoneybagright hidden" src="img/blank.png" />
+    <img id="moneybags14" class="element tomoneybagright hidden" src="img/blank.png" />
+    <img id="moneybags13" class="element tomoneybagright hidden" src="img/blank.png" />
+    <img id="moneybags12" class="element tomoneybagright hidden" src="img/blank.png" />
+    
     <!-- PERCENTAGE -->
     <img id="percentage" class="element hidden" src="img/blank.png" />
     
@@ -202,23 +202,23 @@
                     $(this.element).addClass('animated slideInLeft two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.22 * $(window).height() * delayMult
+                    offset: -0.35 * $(window).height() * delayMult
                 });
-                delayMult += 0.2;
+                delayMult += 0.1;
             });
 
             $('#warehouse6').waypoint(function () {
                 $('#warehouse6').addClass('animated slideInRight two-second');
                 $('#warehouse6').removeClass('hidden');
             }, {
-                offset: -0.22 * $(window).height()
+                offset: -0.35 * $(window).height()
             });
 
             $('#warehousingtitle').waypoint(function () {
                 $('#warehousingtitle').addClass('animated fadeIn two-second');
                 $('#warehousingtitle').removeClass('hidden');
             }, {
-                offset: -0.24 * $(window).height()
+                offset: -0.3 * $(window).height()
             });
 
             $('.truckright').each(function () {
@@ -226,7 +226,7 @@
                     $(this.element).addClass('animated slideInLeft two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.30 * $(window).height() * delayMult
+                    offset: -0.45 * $(window).height() * delayMult
                 });
                 delayMult += 0.1;
             });
@@ -235,7 +235,7 @@
                 $('#cutransportationtitle').addClass('animated fadeIn two-second');
                 $('#cutransportationtitle').removeClass('hidden');
             }, {
-                offset: -0.30 * $(window).height()
+                offset: -0.4 * $(window).height()
             });
             
             $('.truckleft').each(function () {
@@ -243,7 +243,7 @@
                     $(this.element).addClass('animated slideInRight two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.32 * $(window).height() * delayMult
+                    offset: -0.45 * $(window).height() * delayMult
                 });
                 delayMult += 0.1;
             });
