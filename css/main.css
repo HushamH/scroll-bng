@@ -29,5 +29,10 @@ html body .hidden {
 html body .two-second {
   -webkit-animation-duration: 1s;
   /* Chrome, Safari, Opera */
+  animation-duration: 1s;
+}
+html body .three-second {
+  -webkit-animation-duration: 2s;
+  /* Chrome, Safari, Opera */
   animation-duration: 2s;
 }
