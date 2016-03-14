@@ -177,10 +177,10 @@
 
             $('.moneybag').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated bounceInDown two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.075 * $(window).height() * delayMult
+                    offset: -0.075 * $(window).height()
                 });
                 delayMult += 0.2;
             });
@@ -196,34 +196,34 @@
             
             $('.warehouseleft').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated slideInLeft two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.1 * $(window).height() * delayMult
+                    offset: -0.08 * $(window).height()
                 });
                 delayMult += 0.2;
             });
 
             $('#warehouse6').waypoint(function () {
-                $('#warehouse6').addClass('animated slideInRight two-second');
+                $('#warehouse6').addClass('animated fadeIn two-second');
                 $('#warehouse6').removeClass('hidden');
             }, {
-                offset: -0.1 * $(window).height()
+                offset: -0.08 * $(window).height()
             });
 
             $('#warehousingtitle').waypoint(function () {
                 $('#warehousingtitle').addClass('animated fadeIn two-second');
                 $('#warehousingtitle').removeClass('hidden');
             }, {
-                offset: -0.1* $(window).height()
+                offset: -0.08* $(window).height()
             });
 
             $('.truckright').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated slideInLeft two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.15 * $(window).height() * delayMult
+                    offset: -0.09 * $(window).height()
                 });
                 delayMult += 0.1;
             });
@@ -232,15 +232,15 @@
                 $('#cutransportationtitle').addClass('animated fadeIn two-second');
                 $('#cutransportationtitle').removeClass('hidden');
             }, {
-                offset: -0.15 * $(window).height()
+                offset: -0.09 * $(window).height()
             });
             
             $('.truckleft').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated slideInRight two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.15 * $(window).height() * delayMult
+                    offset: -0.09 * $(window).height()
                 });
                 delayMult += 0.1;
             });
@@ -251,7 +251,7 @@
                     $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.20 * $(window).height() * delayMult
+                    offset: -0.095 * $(window).height()
                 });
                 delayMult += 0.2;
             });
@@ -260,46 +260,46 @@
                 $('#labour1').addClass('animated fadeIn two-second');
                 $('#labour1').removeClass('hidden');
             }, {
-                offset: -0.20 * $(window).height()
+                offset: -0.095 * $(window).height()
             });
 
             $('#labourtitle').waypoint(function () {
                 $('#labourtitle').addClass('animated fadeIn two-second');
                 $('#labourtitle').removeClass('hidden');
             }, {
-                offset: -0.20 * $(window).height()
+                offset: -0.095 * $(window).height()
             });
 
             $('.clockleft').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated slideInLeft two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.23 * $(window).height() * delayMult
+                    offset: -0.1 * $(window).height()
                 });
                 delayMult += 0.1;
             });
 
             $('#clock4').waypoint(function () {
-                $('#clock4').addClass('animated slideInRight two-second');
+                $('#clock4').addClass('animated fadeIn two-second');
                 $('#clock4').removeClass('hidden');
             }, {
-                offset: -0.23 * $(window).height()
+                offset: -0.1 * $(window).height()
             });
 
             $('#timetitle').waypoint(function () {
                 $('#timetitle').addClass('animated fadeIn two-second');
                 $('#timetitle').removeClass('hidden');
             }, {
-                offset: -0.23 * $(window).height()
+                offset: -0.1 * $(window).height()
             });
 
             $('.trash').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated slideInLeft two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.33 * $(window).height() * delayMult
+                    offset: -0.105 * $(window).height()
                 });
                 delayMult += 0.1;
             });
@@ -308,16 +308,16 @@
                 $('#disposal').addClass('animated fadeIn two-second');
                 $('#disposal').removeClass('hidden');
             }, {
-                offset: -0.33 * $(window).height()
+                offset: -0.105 * $(window).height()
             });
             
             delayMult = 1; 
             $('.potruckleft').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated slideInRight two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.37 * $(window).height() * delayMult
+                    offset: -0.110 * $(window).height()
                 });
                 delayMult += 0.1;
             });
@@ -325,10 +325,10 @@
             delayMult = 1; 
             $('.potruckright').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated slideInLeft two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.37 * $(window).height() * delayMult
+                    offset: -0.110 * $(window).height()
                 });
                 delayMult += 0.1;
             });
@@ -337,16 +337,16 @@
                 $('#potransportationtitle').addClass('animated fadeIn two-second');
                 $('#potransportationtitle').removeClass('hidden');
             }, {
-                offset: -0.37 * $(window).height()
+                offset: -0.110 * $(window).height()
             });
             
             delayMult = 1; 
             $('.tomoneybagleft').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated bounceInLeft two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.43 * $(window).height() * delayMult
+                    offset: -0.115 * $(window).height()
                 });
                 delayMult += 0.05;
             });
@@ -354,10 +354,10 @@
             delayMult = 1; 
             $('.tomoneybagright').each(function () {
                 $(this).waypoint(function () {
-                    $(this.element).addClass('animated bounceInRight two-second');
+                    $(this.element).addClass('animated fadeIn two-second');
                     $(this.element).removeClass('hidden');
                 }, {
-                    offset: -0.43 * $(window).height() * delayMult
+                    offset: -0.115 * $(window).height()
                 });
                 delayMult += 0.05;
             });
@@ -366,7 +366,7 @@
                 $('#percentage').addClass('animated fadeIn two-second');
                 $('#percentage').removeClass('hidden');
             }, {
-                offset: -0.46 * $(window).height()
+                offset: -0.116 * $(window).height()
             });
             
         });
