@@ -1,6 +1,13 @@
 (function() {
 	var triggerBttn = document.getElementById( 'trigger-overlay' ),
-		overlay = document.querySelector( 'div.overlay' ),
+		overlaymatcostpre = document.querySelector( 'div.overlay-matcostpre' ),
+		overlaywarehousingpre = document.querySelector( 'div.overlay-warehousingpre'),
+		overlaytransportationcu = document.querySelector( 'div.overlay-transportationcu'),
+		overlaylabourcu = document.querySelector( 'div.overlay-labourcu'),
+		overlaytimecu = document.querySelector( 'div.overlay-timecu'),
+		overlaytransportationpost = document.querySelector( 'div.overlay-transportationpost'),
+		overlaydisposalpost = document.querySelector( 'div.overlay-disposalpost'),
+
 		closeBttn = overlay.querySelector( 'button.overlay-close' );
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
@@ -12,7 +19,7 @@
 		transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
 		support = { transitions : Modernizr.csstransitions };
 
-	function toggleOverlay() {
+	function toggleOverlay(overlay) {
 		if( classie.has( overlay, 'open' ) ) {
 			classie.remove( overlay, 'open' );
 			classie.add( overlay, 'close' );
