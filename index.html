@@ -22,10 +22,15 @@
     <link href="./css/main.css" rel=stylesheet />
     <link href="./css/animate.css" rel="stylesheet" />
     <link href="./css/hover-min.css" rel="stylesheet" />
+    <link href="./css/style1.css" rel="stylesheet" />
     <!--[if lt IE 9]><script src="javascripts/ie8-956878c5.js"></script><![endif]-->
+    
     <!-- Header JS -->
     <script src="https://code.jquery.com/jquery-2.2.1.min.js" integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00=" crossorigin="anonymous"></script>
     <script src="./js/node_modules/waypoints/lib/jquery.waypoints.min.js"></script>
+    <script src="./js/demo1.js"></script>
+    <script src="./js/classie.js"></script>
+    <script src="./js/modernizr.custom.js"></script>
     
     <script type="text/javascript">
         $(document).ready(function() {
@@ -40,17 +45,18 @@
                 $('#' + id_name)[0].src =  img_src[i];
                 console.log( $('#' + id_name)[0].src);
             }
-
         });
     </script>
 </head>
 
 <body>
+    
+    <!-- Background image -->
     <div class="backgroundimg">
             <img id="newbg" src="img/blank.png" width="100%" />
-
     </div>
     
+    <!-- Title images -->
     <img id="matcostpre" class="hvr-pulse" src="img/blank.png" width="12%" />
     <img id="warehousingpre" class="hvr-pulse" src="img/blank.png" width="20%" />
     <img id="transportationcu" class="hvr-pulse" src="img/blank.png" width="25%" />
@@ -59,8 +65,9 @@
     <img id="transportationpost" class="hvr-pulse" src="img/blank.png" width="25%" />
     <img id="disposalpost" class="hvr-pulse" src="img/blank.png" width="14%" />
     
-    <div class="overlay overlay-hugeinc">
-			<button type="button" class="overlay-close">Close</button>
+    <!-- Overlays --> 
+    <div class="overlay overlay-hugeinc overlay-matcostpre">
+			<button type="button" id="overlay-close-matcostpre" class="overlay-close">Close</button>
 			<nav>
 				<ul>
 					<li><a href="#">Home</a></li>
@@ -71,7 +78,78 @@
 				</ul>
 			</nav>
     </div>
-    
+    <div class="overlay overlay-hugeinc overlay-warehousingpre">
+			<button type="button" id="overlay-close-warehousingpre" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+    </div>
+    <div class="overlay overlay-hugeinc overlay-transportationcu">
+			<button type="button" id="overlay-close-transportationcu" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+    </div>
+    <div class="overlay overlay-hugeinc overlay-labourcu">
+			<button type="button" id="overlay-close-labourcu" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+    </div>
+    <div class="overlay overlay-hugeinc overlay-timecu">
+			<button type="button" id="overlay-close-timecu" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+    </div>
+    <div class="overlay overlay-hugeinc overlay-transportationpost">
+			<button type="button" id="overlay-close-transportationpost" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+    </div> 
+    <div class="overlay overlay-hugeinc overlay-disposalpost">
+			<button type="button" id="overlay-close-disposalpost" class="overlay-close">Close</button>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Work</a></li>
+					<li><a href="#">Clients</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+    </div>
     
     <script>
         $(document).ready(function() {
