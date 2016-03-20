@@ -1,4 +1,4 @@
-(function() {
+$(document).ready(function() {
 	var overlaymatcostpre = document.querySelector( 'div.overlay-matcostpre' ),
 		overlaywarehousingpre = document.querySelector( 'div.overlay-warehousingpre'),
 		overlaytransportationcu = document.querySelector( 'div.overlay-transportationcu'),
@@ -67,4 +67,4 @@
 	closetransportationpost.addEventListener('click', toggleOverlay(overlaytransportationpost));
 	triggerdisposalpost.addEventListener('click', toggleOverlay(overlaydisposalpost));
 	closedisposalpost.addEventListener('click', toggleOverlay(overlaydisposalpost));
-})();
+});
