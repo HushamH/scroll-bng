@@ -52,19 +52,47 @@ $(document).ready(function() {
 			classie.add( overlay, 'open' );
 		}
 	}
-
-	triggermatcostpre.addEventListener('click', toggleOverlay(overlaymatcostpre));
-	closematcostpre.addEventListener('click', toggleOverlay(overlaymatcostpre));
-	triggerwarehousingpre.addEventListener('click', toggleOverlay(overlaywarehousingpre));
-	closewarehousingpre.addEventListener('click', toggleOverlay(overlaywarehousingpre));
-	triggerlabourcu.addEventListener('click', toggleOverlay(overlaylabourcu));
-	closelabourcu.addEventListener('click', toggleOverlay(overlaylabourcu));
-	triggertransportationcu.addEventListener('click', toggleOverlay(overlaytransportationcu));
-	closetransportationcu.addEventListener('click', toggleOverlay(overlaytransportationcu));
-	triggertimecu.addEventListener('click', toggleOverlay(overlaytimecu));
-	closetimecu.addEventListener('click', toggleOverlay(overlaytimecu));
-	triggertransportationpost.addEventListener('click', toggleOverlay(overlaytransportationpost));
-	closetransportationpost.addEventListener('click', toggleOverlay(overlaytransportationpost));
-	triggerdisposalpost.addEventListener('click', toggleOverlay(overlaydisposalpost));
-	closedisposalpost.addEventListener('click', toggleOverlay(overlaydisposalpost));
+    
+    triggermatcostpre.addEventListener('click', function () {
+        toggleOverlay(overlaymatcostpre);
+    });
+	closematcostpre.addEventListener('click', function() {
+        toggleOverlay(overlaymatcostpre);
+    });
+	triggerwarehousingpre.addEventListener('click', function() {
+        toggleOverlay(overlaywarehousingpre);
+    });
+	closewarehousingpre.addEventListener('click', function() {
+        toggleOverlay(overlaywarehousingpre);
+    });
+	triggerlabourcu.addEventListener('click', function() {
+        toggleOverlay(overlaylabourcu);
+    });
+	closelabourcu.addEventListener('click', function() {
+        toggleOverlay(overlaylabourcu);
+    });
+	triggertransportationcu.addEventListener('click', function() {
+        toggleOverlay(overlaytransportationcu);
+    });
+	closetransportationcu.addEventListener('click', function() {
+        toggleOverlay(overlaytransportationcu);
+    });
+	triggertimecu.addEventListener('click', function() {
+        toggleOverlay(overlaytimecu);
+    });
+	closetimecu.addEventListener('click', function() {
+        toggleOverlay(overlaytimecu);
+    });
+	triggertransportationpost.addEventListener('click', function() {
+        toggleOverlay(overlaytransportationpost);
+    });
+	closetransportationpost.addEventListener('click', function() {
+        toggleOverlay(overlaytransportationpost);
+    });
+	triggerdisposalpost.addEventListener('click', function() {
+        toggleOverlay(overlaydisposalpost);
+    });
+	closedisposalpost.addEventListener('click', function() {
+        toggleOverlay(overlaydisposalpost);
+    });
 });

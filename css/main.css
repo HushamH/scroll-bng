@@ -38,29 +38,22 @@ html body .three-second {
 }
 html body #matcostpre {
   position: absolute;
-  z-index: 1;
 }
 html body #warehousingpre {
   position: absolute;
-  z-index: 2;
 }
 html body #transportationcu {
   position: absolute;
-  z-index: 3;
 }
 html body #labourcu {
   position: absolute;
-  z-index: 4;
 }
 html body #timecu {
   position: absolute;
-  z-index: 5;
 }
 html body #transportationpost {
   position: absolute;
-  z-index: 6;
 }
 html body #disposalpost {
   position: absolute;
-  z-index: 7;
 }
