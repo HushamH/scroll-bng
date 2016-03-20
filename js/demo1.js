@@ -19,7 +19,7 @@
 		closelabourcu = document.querySelector( 'overlay-close-labourcu'),
 		closetimecu = document.querySelector( 'overlay-close-timecu'),
 		closetransportationpost = document.querySelector( 'overlay-close-transportationpost'),
-		closedisposalpost = document.querySelector( 'overlay-close-disposalpost');
+		closedisposalpost = document.querySelector( 'overlay-close-disposalpost'),
 		transEndEventNames = {
 			'WebkitTransition': 'webkitTransitionEnd',
 			'MozTransition': 'transitionend',
