@@ -60,10 +60,65 @@ html body .resize {
   position: absolute;
   bottom: -1000%;
 }
+html body .resize1 {
+  position: absolute;
+  bottom: -1000%;
+}
 html body .title {
-  left: 40.5%;
+  left: 5% !important;
 }
 html body #maintitle {
-  top: 26%;
-  left: 39.5%;
+  top: 10%;
+}
+html body #pre-spilltitle {
+  top: 75% !important;
+}
+html body #matcostpre1 {
+  top: 118%;
+  left:9%;
+}
+html body #matcostpre2 {
+  top: 118%; 
+  left: 65%;
+}
+html body #warehousingpre1 {
+  top: 155%; 
+  left: 0%;
+}
+html body #warehousingpre2 {
+  top: 167%; 
+  left: 65%;
+}
+html body #clean-uptitle {
+  top: 190%;
+}
+html body #transportationcu1 {
+  top: 220%; 
+  left: 0%;
+}
+html body #transportationcu2 {
+  top: 220%; 
+  left: 65%;
+}
+html body #labourcu1 {
+  top: 265%; 
+  left: 0%;
+}
+html body #labourcu2 {
+  top: 274%; 
+  left: 63%;
+}
+html body #timecu1 {
+  top: 307%; 
+  left: 4%;
+}
+html body #timecu2 {
+  top: 307%; 
+  left: 65%;
+}
+html body #post-spilltitle {
+  top: 338%;
+}
+html body #total-costtitle {
+  top: 450%;
 }
