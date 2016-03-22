@@ -56,6 +56,9 @@ html body #transportationpost {
 html body #disposalpost {
   position: absolute;
 }
+html body .hvr-float {
+  z-index:100;
+}
 html body .resize {
   position: absolute;
   cursor:pointer;
