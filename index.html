@@ -177,57 +177,59 @@
     
     <script>
         $(document).ready(function() {
+            $(window).load(function() {
 
-            // Code to make responsive. 
-            
-            function updateHeight() {
-                var bgHeight = $('#newbg').height(); 
-                
-                var matcostpreTitleHeight = bgHeight * 0.2175; 
-                var warehousingpreTitleHeight = bgHeight * 0.2753;
-                var transportationcuTitleHeight = bgHeight * 0.3831;
-                var labourcuTitleHeight = bgHeight * 0.4789;
-                var timecuTitleHeight = bgHeight * 0.5487;
-                var transportationpostTitleHeight = bgHeight * 0.6405;
-                var disposalpostTitleHeight = bgHeight * 0.7283;
-                
-                $('#matcostpre').css('top', matcostpreTitleHeight);
-                $('#warehousingpre').css('top', warehousingpreTitleHeight);
-                $('#transportationcu').css('top', transportationcuTitleHeight);
-                $('#labourcu').css('top', labourcuTitleHeight);
-                $('#timecu').css('top', timecuTitleHeight);
-                $('#transportationpost').css('top', transportationpostTitleHeight);
-                $('#disposalpost').css('top', disposalpostTitleHeight);
-            }
-            
-            function updateWidth() {
-                var bgWidth = $('#newbg').width();
-                
-                var matcostpreTitleWidth = bgWidth * 0.4453; 
-                var warehousingpreTitleWidth = bgWidth * 0.4023;
-                var transportationcuTitleWidth = bgWidth * 0.3867;
-                var labourcuTitleWidth = bgWidth * 0.46093;
-                var timecuTitleWidth = bgWidth * 0.4765;
-                var transportationpostTitleWidth = bgWidth * 0.3867;
-                var disposalpostTitleWidth = bgWidth * 0.4375; 
-                
-                $('#matcostpre').css('left', matcostpreTitleWidth);
-                $('#warehousingpre').css('left', warehousingpreTitleWidth);
-                $('#transportationcu').css('left', transportationcuTitleWidth);
-                $('#labourcu').css('left', labourcuTitleWidth);
-                $('#timecu').css('left', timecuTitleWidth);
-                $('#transportationpost').css('left', transportationpostTitleWidth);
-                $('#disposalpost').css('left', disposalpostTitleWidth);
-            }
-            
-            updateHeight();
-            updateWidth();
-            
-            $(window).resize(function() {
+                // Code to make responsive. 
+
+                function updateHeight() {
+                    var bgHeight = $('#newbg').height(); 
+
+                    var matcostpreTitleHeight = bgHeight * 0.2175; 
+                    var warehousingpreTitleHeight = bgHeight * 0.2753;
+                    var transportationcuTitleHeight = bgHeight * 0.3831;
+                    var labourcuTitleHeight = bgHeight * 0.4789;
+                    var timecuTitleHeight = bgHeight * 0.5487;
+                    var transportationpostTitleHeight = bgHeight * 0.6405;
+                    var disposalpostTitleHeight = bgHeight * 0.7283;
+
+                    $('#matcostpre').css('top', matcostpreTitleHeight);
+                    $('#warehousingpre').css('top', warehousingpreTitleHeight);
+                    $('#transportationcu').css('top', transportationcuTitleHeight);
+                    $('#labourcu').css('top', labourcuTitleHeight);
+                    $('#timecu').css('top', timecuTitleHeight);
+                    $('#transportationpost').css('top', transportationpostTitleHeight);
+                    $('#disposalpost').css('top', disposalpostTitleHeight);
+                }
+
+                function updateWidth() {
+                    var bgWidth = $('#newbg').width();
+
+                    var matcostpreTitleWidth = bgWidth * 0.4453; 
+                    var warehousingpreTitleWidth = bgWidth * 0.4023;
+                    var transportationcuTitleWidth = bgWidth * 0.3867;
+                    var labourcuTitleWidth = bgWidth * 0.46093;
+                    var timecuTitleWidth = bgWidth * 0.4765;
+                    var transportationpostTitleWidth = bgWidth * 0.3867;
+                    var disposalpostTitleWidth = bgWidth * 0.4375; 
+
+                    $('#matcostpre').css('left', matcostpreTitleWidth);
+                    $('#warehousingpre').css('left', warehousingpreTitleWidth);
+                    $('#transportationcu').css('left', transportationcuTitleWidth);
+                    $('#labourcu').css('left', labourcuTitleWidth);
+                    $('#timecu').css('left', timecuTitleWidth);
+                    $('#transportationpost').css('left', transportationpostTitleWidth);
+                    $('#disposalpost').css('left', disposalpostTitleWidth);
+                }
+
                 updateHeight();
                 updateWidth();
+
+                $(window).resize(function() {
+                    updateHeight();
+                    updateWidth();
+                });
             });
-        });
+        });        
     </script>
 </body>
 
