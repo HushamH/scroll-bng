@@ -1,95 +1,92 @@
 $(document).ready(function() {
 	var overlaymaintitle = document.querySelector( 'div.overlay-maintitle' ),
-		overlaymatcostprebanner = document.querySelector( 'div.overlay-matcostprebanner' ),
+		overlayprespilltitle = document.querySelector( 'div.overlay-prespilltitle' ),
 		overlaymatcostpre = document.querySelector( 'div.overlay-matcostpre' ),
 		overlaymatcostpre1 = document.querySelector( 'div.overlay-matcostpre1' ),
 		overlaymatcostpre2 = document.querySelector( 'div.overlay-matcostpre2' ),
-		overlaywarehousingprebanner = document.querySelector( 'div.overlay-warehousingprebanner'),
 		overlaywarehousingpre = document.querySelector( 'div.overlay-warehousingpre'),
 		overlaywarehousingpre1 = document.querySelector( 'div.overlay-warehousingpre1'),
 		overlaywarehousingpre2 = document.querySelector( 'div.overlay-warehousingpre2'),
-		overlaytransportationcubanner = document.querySelector( 'div.overlay-transportationcubanner'),
+		overlaycleanuptitle = document.querySelector( 'div.overlay-cleanuptitle'),
 		overlaytransportationcu = document.querySelector( 'div.overlay-transportationcu'),
 		overlaytransportationcu1 = document.querySelector( 'div.overlay-transportationcu1'),
 		overlaytransportationcu2 = document.querySelector( 'div.overlay-transportationcu2'),
-		overlaylabourcubanner = document.querySelector( 'div.overlay-labourcubanner'),
 		overlaylabourcu = document.querySelector( 'div.overlay-labourcu'),
 		overlaylabourcu1 = document.querySelector( 'div.overlay-labourcu1'),
 		overlaylabourcu2 = document.querySelector( 'div.overlay-labourcu2'),
-		overlaytimecubanner = document.querySelector( 'div.overlay-timecubanner'),
 		overlaytimecu = document.querySelector( 'div.overlay-timecu'),
 		overlaytimecu1 = document.querySelector( 'div.overlay-timecu1'),
 		overlaytimecu2 = document.querySelector( 'div.overlay-timecu2'),
-		overlaytransportationpostbanner = document.querySelector( 'div.overlay-transportationpostbanner'),
+		overlaypostspilltitle = document.querySelector( 'div.overlay-overlaypostspilltitle'),
 		overlaytransportationpost = document.querySelector( 'div.overlay-transportationpost'),
 		overlaytransportationpost1 = document.querySelector( 'div.overlay-transportationpost1'),
 		overlaytransportationpost2 = document.querySelector( 'div.overlay-transportationpost2'),
-		overlaydisposalpostbanner = document.querySelector( 'div.overlay-disposalpostbanner'),
 		overlaydisposalpost = document.querySelector( 'div.overlay-disposalpost'),
 		overlaydisposalpost1 = document.querySelector( 'div.overlay-disposalpost1'),
 		overlaydisposalpost2 = document.querySelector( 'div.overlay-disposalpost2'),
+		overlaytotalcosttitle = document.querySelector( 'div.overlay-totalcosttitle'),
+		overlaytotalcost1 = document.querySelector( 'div.overlay-totalcost1'),
+		overlaytotalcost2 = document.querySelector( 'div.overlay-totalcost2'),
 		overlayoverallcost = document.querySelector( 'div.overlay-overallcost'),
 
 		triggermaintitle = document.querySelector( 'img#maintitle'),
-		triggermatcostprebanner = document.querySelector( 'img#matcostprebanner'),
+		triggerprespilltitle = document.querySelector( 'img#pre-spilltitle'),
 		triggermatcostpre = document.querySelector( 'img#matcostpre'),
 		triggermatcostpre1 = document.querySelector( 'img#matcostpre1'),
 		triggermatcostpre2 = document.querySelector( 'img#matcostpre2'),
-		triggerwarehousingprebanner = document.querySelector( 'img#warehousingprebanner'),
 		triggerwarehousingpre = document.querySelector( 'img#warehousingpre'),
 		triggerwarehousingpre1 = document.querySelector( 'img#warehousingpre1'),
 		triggerwarehousingpre2 = document.querySelector( 'img#warehousingpre2'),
-		triggertransportationcubanner = document.querySelector( 'img#transportationcubanner'),
+		triggercleanuptitle = document.querySelector( 'img#clean-uptitle'),
 		triggertransportationcu = document.querySelector( 'img#transportationcu'),
 		triggertransportationcu1 = document.querySelector( 'img#transportationcu1'),
 		triggertransportationcu2 = document.querySelector( 'img#transportationcu2'),
-		triggerlabourcubanner = document.querySelector( 'img#labourcubanner'),
 		triggerlabourcu = document.querySelector( 'img#labourcu'),
 		triggerlabourcu1 = document.querySelector( 'img#labourcu1'),
 		triggerlabourcu2 = document.querySelector( 'img#labourcu2'),
-		triggertimecubanner = document.querySelector( 'img#timecubanner'),
 		triggertimecu = document.querySelector( 'img#timecu'),
 		triggertimecu1 = document.querySelector( 'img#timecu1'),
 		triggertimecu2 = document.querySelector( 'img#timecu2'),
-		triggertransportationpostbanner = document.querySelector( 'img#transportationpostbanner'),
+		triggerpostspilltitle = document.querySelector( 'img#post-spilltitle'),
 		triggertransportationpost = document.querySelector( 'img#transportationpost'),
 		triggertransportationpost1 = document.querySelector( 'img#transportationpost1'),
 		triggertransportationpost2 = document.querySelector( 'img#transportationpost2'),
-		triggerdisposalpostbanner = document.querySelector( 'img#disposalpostbanner'),
 		triggerdisposalpost = document.querySelector( 'img#disposalpost'),
 		triggerdisposalpost1 = document.querySelector( 'img#disposalpost1'),
 		triggerdisposalpost2 = document.querySelector( 'img#disposalpost2'),
+		triggertotalcosttitle = document.querySelector( 'img#total-costtitle'),
+		triggertotalcost1 = document.querySelector( 'img#totalcost1'),
+		triggertotalcost2 = document.querySelector( 'img#totalcost2'),
 		triggeroverallcost = document.querySelector( 'img#triggeroverallcost'),
 
 		closemaintitle = document.querySelector( 'button#overlay-close-maintitle'),
-		closematcostprebanner = document.querySelector( 'button#overlay-close-matcostprebanner'),
+		closeprespilltitle = document.querySelector( 'button#overlay-close-prespilltitle'),
 		closematcostpre = document.querySelector( 'button#overlay-close-matcostpre'),
 		closematcostpre1 = document.querySelector( 'button#overlay-close-matcostpre1'),
 		closematcostpre2 = document.querySelector( 'button#overlay-close-matcostpre2'),
-		closewarehousingprebanner = document.querySelector( 'button#overlay-close-warehousingprebanner'),
 		closewarehousingpre = document.querySelector( 'button#overlay-close-warehousingpre'),
 		closewarehousingpre1 = document.querySelector( 'button#overlay-close-warehousingpre1'),
 		closewarehousingpre2 = document.querySelector( 'button#overlay-close-warehousingpre2'),
-		closetransportationcubanner = document.querySelector( 'button#overlay-close-transportationcubanner'),
+		closecleanuptitle = document.querySelector( 'button#overlay-close-cleanuptitle'),
 		closetransportationcu = document.querySelector( 'button#overlay-close-transportationcu'),
 		closetransportationcu1 = document.querySelector( 'button#overlay-close-transportationcu1'),
 		closetransportationcu2 = document.querySelector( 'button#overlay-close-transportationcu2'),
-		closelabourcubanner = document.querySelector( 'button#overlay-close-labourcubanner'),
 		closelabourcu = document.querySelector( 'button#overlay-close-labourcu'),
 		closelabourcu1 = document.querySelector( 'button#overlay-close-labourcu1'),
 		closelabourcu2 = document.querySelector( 'button#overlay-close-labourcu2'),
-		closetimecubanner = document.querySelector( 'button#overlay-close-timecubanner'),
 		closetimecu = document.querySelector( 'button#overlay-close-timecu'),
 		closetimecu1 = document.querySelector( 'button#overlay-close-timecu1'),
 		closetimecu2 = document.querySelector( 'button#overlay-close-timecu2'),
-		closetransportationpostbanner = document.querySelector( 'button#overlay-close-transportationpostbanner'),
+		closepostspilltitle = document.querySelector( 'button#overlay-close-postspilltitle'),
 		closetransportationpost = document.querySelector( 'button#overlay-close-transportationpost'),
 		closetransportationpost1 = document.querySelector( 'button#overlay-close-transportationpost1'),
 		closetransportationpost2 = document.querySelector( 'button#overlay-close-transportationpost2'),
-		closedisposalpostbanner = document.querySelector( 'button#overlay-close-disposalpostbanner'),
 		closedisposalpost = document.querySelector( 'button#overlay-close-disposalpost'),
 		closedisposalpost1 = document.querySelector( 'button#overlay-close-disposalpost1'),
 		closedisposalpost2 = document.querySelector( 'button#overlay-close-disposalpost2'),
+		closetotalcosttitle = document.querySelector( 'button#overlay-close-totalcosttitle'),
+		closetotalcost1 = document.querySelector( 'button#overlay-close-totalcost1'),
+		closetotalcost2 = document.querySelector( 'button#overlay-close-totalcost2'),
 		closeoverallcost = document.querySelector( 'button#overlay-close-overallcost'),
 
 		transEndEventNames = {
@@ -132,11 +129,11 @@ $(document).ready(function() {
 		toggleOverlay(overlaymaintitle);
 	});
 
-	triggermatcostprebanner.addEventListener('click', function () {
-		toggleOverlay(overlaymatcostprebanner);
+	triggerprespilltitle.addEventListener('click', function () {
+		toggleOverlay(overlayprespilltitle);
 	});
-	closematcostprebanner.addEventListener('click', function() {
-		toggleOverlay(overlaymatcostprebanner);
+	closeprespilltitle.addEventListener('click', function() {
+		toggleOverlay(overlayprespilltitle);
 	});
     triggermatcostpre.addEventListener('click', function () {
         toggleOverlay(overlaymatcostpre);
@@ -157,12 +154,6 @@ $(document).ready(function() {
 		toggleOverlay(overlaymatcostpre2);
 	});
 
-	triggerwarehousingprebanner.addEventListener('click', function() {
-		toggleOverlay(overlaywarehousingprebanner);
-	});
-	closewarehousingprebanner.addEventListener('click', function() {
-		toggleOverlay(overlaywarehousingprebanner);
-	});
 	triggerwarehousingpre.addEventListener('click', function() {
         toggleOverlay(overlaywarehousingpre);
     });
@@ -182,11 +173,11 @@ $(document).ready(function() {
 		toggleOverlay(overlaywarehousingpre2);
 	});
 
-	triggerlabourcubanner.addEventListener('click', function() {
-		toggleOverlay(overlaylabourcubanner);
+	triggercleanuptitle.addEventListener('click', function() {
+		toggleOverlay(overlaycleanuptitle);
 	});
-	closelabourcubanner.addEventListener('click', function() {
-		toggleOverlay(overlaylabourcubanner);
+	closecleanuptitle.addEventListener('click', function() {
+		toggleOverlay(overlaycleanuptitle);
 	});
 	triggerlabourcu.addEventListener('click', function() {
         toggleOverlay(overlaylabourcu);
@@ -207,12 +198,6 @@ $(document).ready(function() {
 		toggleOverlay(overlaylabourcu2);
 	});
 
-	triggertransportationcubanner.addEventListener('click', function() {
-		toggleOverlay(overlaytransportationcubanner);
-	});
-	closetransportationcubanner.addEventListener('click', function() {
-		toggleOverlay(overlaytransportationcubanner);
-	});
 	triggertransportationcu.addEventListener('click', function() {
         toggleOverlay(overlaytransportationcu);
     });
@@ -232,12 +217,6 @@ $(document).ready(function() {
 		toggleOverlay(overlaytransportationcu2);
 	});
 
-	triggertimecubanner.addEventListener('click', function() {
-		toggleOverlay(overlaytimecubanner);
-	});
-	closetimecubanner.addEventListener('click', function() {
-		toggleOverlay(overlaytimecubanner);
-	});
 	triggertimecu.addEventListener('click', function() {
         toggleOverlay(overlaytimecu);
     });
@@ -257,11 +236,11 @@ $(document).ready(function() {
 		toggleOverlay(overlaytimecu2);
 	});
 
-	triggertransportationpostbanner.addEventListener('click', function() {
-		toggleOverlay(overlaytransportationpostbanner);
+	triggerpostspilltitle.addEventListener('click', function() {
+		toggleOverlay(overlaypostspilltitle);
 	});
-	closetransportationpostbanner.addEventListener('click', function() {
-		toggleOverlay(overlaytransportationpostbanner);
+	closepostspilltitle.addEventListener('click', function() {
+		toggleOverlay(overlaypostspilltitle);
 	});
 	triggertransportationpost.addEventListener('click', function() {
         toggleOverlay(overlaytransportationpost);
@@ -282,12 +261,6 @@ $(document).ready(function() {
 		toggleOverlay(overlaytransportationpost2);
 	});
 
-	triggerdisposalpostbanner.addEventListener('click', function() {
-		toggleOverlay(overlaydisposalpostbanner);
-	});
-	closedisposalpostbanner.addEventListener('click', function() {
-		toggleOverlay(overlaydisposalpostbanner);
-	});
 	triggerdisposalpost.addEventListener('click', function() {
         toggleOverlay(overlaydisposalpost);
     });
@@ -305,6 +278,25 @@ $(document).ready(function() {
 	});
 	closedisposalpost2.addEventListener('click', function() {
 		toggleOverlay(overlaydisposalpost2);
+	});
+
+	triggertotalcosttitle.addEventListener('click', function() {
+		toggleOverlay(overlaytotalcosttitle);
+	});
+	closetotalcosttitle.addEventListener('click', function() {
+		toggleOverlay(overlaytotalcosttitle);
+	});
+	triggertotalcost1.addEventListener('click', function() {
+		toggleOverlay(overlaytotalcost1);
+	});
+	closetotalcost1.addEventListener('click', function() {
+		toggleOverlay(overlaytotalcost1);
+	});
+	triggertotalcost2.addEventListener('click', function() {
+		toggleOverlay(overlaytotalcost2);
+	});
+	closetotalcost2.addEventListener('click', function() {
+		toggleOverlay(overlaytotalcost2);
 	});
 
 	triggeroverallcost.addEventListener('click', function() {
