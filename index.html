@@ -38,13 +38,26 @@
     <script type="text/javascript">
         $(document).ready(function() {
             
-            var img_src = ["img/newbg.svg", "img/titles/warehousingpre.svg", "img/titles/matcostpre.svg", 
-                              "img/titles/transportationcu.svg", "img/titles/labourcu.svg", "img/titles/timecu.svg", 
-                              "img/titles/transportationpost.svg", "img/titles/disposalpost.svg"];
+            var img_src = ["img/newbg1.svg","img/general/maintitle.svg", "img/pre-spill1/pre-spilltitle.svg", 
+                           "img/pre-spill1/matcostpre.svg", "img/pre-spill1/matcostpre1.svg",
+                           "img/pre-spill1/matcostpre2.svg", "img/pre-spill1/warehousingpre.svg",
+                           "img/pre-spill1/warehousingpre1.svg", "img/pre-spill1/warehousingpre2.svg",
+                           "img/clean-up1/clean-uptitle.svg", "img/clean-up1/transportationcu.svg",
+                           "img/clean-up1/transportationcu1.svg", "img/clean-up1/transportationcu2.svg",
+                           "img/clean-up1/labourcu.svg", "img/clean-up1/labourcu1.svg", 
+                           "img/clean-up1/labourcu2.svg", "img/clean-up1/timecu.svg", 
+                           "img/clean-up1/timecu1.svg", "img/clean-up1/timecu2.svg", 
+                           "img/post-spill1/post-spilltitle.svg", 
+                           "img/post-spill1/transportationpost.svg", 
+                           "img/post-spill1/transportationpost1.svg", "img/post-spill1/transportationpost2.svg", 
+                           "img/post-spill1/disposalpost.svg", "img/post-spill1/disposalpost1.svg", 
+                           "img/post-spill1/disposalpost2.svg", "img/total-costs1/total-costtitle.svg", 
+                           "img/total-costs1/totalcost1.svg", "img/total-costs1/totalcost2.svg", 
+                           "img/total-costs1/overallcost.svg"];
 
             for (i=0; i < img_src.length; i++) {
                 var img = new Image();
-                var id_name = (/\/([\w\d]+)\.svg/.exec(img_src[i]))[1];
+                var id_name = (/\/([\w-\d]+)\.svg/.exec(img_src[i]))[1];
                 $('#' + id_name)[0].src =  img_src[i];
                 console.log( $('#' + id_name)[0].src);
             }
@@ -56,52 +69,52 @@
     
     <!-- Background image -->
     <div class="backgroundimg">
-            <img id="newbg" src="img/blank.png" width="100%" />
+            <img id="newbg1" src="img/blank.png" width="100%" />
     </div>
     
     <!-- Title images -->
-    <img id="maintitle" class="hvr-pulse" />
+    <img id="maintitle" class="hvr-pulse" src="img/blank.png" />
 
-    <img id="pre-spilltitle" class="hvr-pulse" />
+    <img id="pre-spilltitle" class="hvr-pulse" src="img/blank.png" />
 
     <img id="matcostpre" class="hvr-pulse" src="img/blank.png" width="12%" />
-    <img id="matcostpre1" class="hvr-pulse" />
-    <img id="matcostpre2" class="hvr-pulse" />
+    <img id="matcostpre1" class="hvr-pulse" src="img/blank.png" />
+    <img id="matcostpre2" class="hvr-pulse" src="img/blank.png" />
 
     <img id="warehousingpre" class="hvr-pulse" src="img/blank.png" width="20%" />
-    <img id="warehousingpre1" class="hvr-pulse" />
-    <img id="warehousingpre2" class="hvr-pulse" />
+    <img id="warehousingpre1" class="hvr-pulse" src="img/blank.png" />
+    <img id="warehousingpre2" class="hvr-pulse" src="img/blank.png" />
 
-    <img id="clean-uptitle" class="hvr-pulse"/>
+    <img id="clean-uptitle" class="hvr-pulse" src="img/blank.png" />
 
     <img id="transportationcu" class="hvr-pulse" src="img/blank.png" width="25%" />
-    <img id="transportationcu1" class="hvr-pulse" />
-    <img id="transportaitoncu2" class="hvr-pulse" />
+    <img id="transportationcu1" class="hvr-pulse" src="img/blank.png"/>
+    <img id="transportationcu2" class="hvr-pulse" src="img/blank.png"/>
 
     <img id="labourcu" class="hvr-pulse" src="img/blank.png" width="11%" />
-    <img id="labourcu1" class="hvr-pulse" />
-    <img id="labourcu2" class="hvr-pulse" />
+    <img id="labourcu1" class="hvr-pulse" src="img/blank.png"/>
+    <img id="labourcu2" class="hvr-pulse" src="img/blank.png"/>
 
     <img id="timecu" class="hvr-pulse" src="img/blank.png" width="8%" />
-    <img id="timecu1" class="hvr-pulse" />
-    <img id="timecu2" class="hvr-pulse" />
+    <img id="timecu1" class="hvr-pulse" src="img/blank.png"/>
+    <img id="timecu2" class="hvr-pulse" src="img/blank.png"/>
 
-    <img id="post-spilltitle" class="hvr-pulse"/>
+    <img id="post-spilltitle" class="hvr-pulse" src="img/blank.png"/>
 
     <img id="transportationpost" class="hvr-pulse" src="img/blank.png" width="25%" />
-    <img id="transportationpost1" class="hvr-pulse" />
-    <img id="transportationpost2" class="hvr-pulse" />
+    <img id="transportationpost1" class="hvr-pulse" src="img/blank.png"/>
+    <img id="transportationpost2" class="hvr-pulse" src="img/blank.png"/>
 
     <img id="disposalpost" class="hvr-pulse" src="img/blank.png" width="14%" />
-    <img id="disposalpost1" class="hvr-pulse" />
-    <img id="disposalpost2" class="hvr-pulse" />
+    <img id="disposalpost1" class="hvr-pulse" src="img/blank.png"/>
+    <img id="disposalpost2" class="hvr-pulse" src="img/blank.png"/>
 
-    <img id="total-costtitle" class="hvr-pulse"/>
+    <img id="total-costtitle" class="hvr-pulse" src="img/blank.png"/>
 
-    <img id="totalcost1" class="hvr-pulse"/>
-    <img id="totalcost2" class="hvr-pulse"/>
+    <img id="totalcost1" class="hvr-pulse" src="img/blank.png"/>
+    <img id="totalcost2" class="hvr-pulse" src="img/blank.png"/>
 
-    <img id="overallcost" class="hvr-pulse" />
+    <img id="overallcost" class="hvr-pulse" src="img/blank.png"/>
 
     <!-- Overlays -->
     <div class="overlay overlay-hugeinc overlay-maintitle">
@@ -556,7 +569,7 @@
                 // Code to make responsive. 
 
                 function updateHeight() {
-                    var bgHeight = $('#newbg').height(); 
+                    var bgHeight = $('#newbg1').height(); 
 
                     var matcostpreTitleHeight = bgHeight * 0.2175; 
                     var warehousingpreTitleHeight = bgHeight * 0.2753;
@@ -576,7 +589,7 @@
                 }
 
                 function updateWidth() {
-                    var bgWidth = $('#newbg').width();
+                    var bgWidth = $('#newbg1').width();
 
                     var matcostpreTitleWidth = bgWidth * 0.4453; 
                     var warehousingpreTitleWidth = bgWidth * 0.4023;

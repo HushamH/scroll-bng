@@ -57,7 +57,7 @@ $(document).ready(function() {
 		triggertotalcosttitle = document.querySelector( 'img#total-costtitle'),
 		triggertotalcost1 = document.querySelector( 'img#totalcost1'),
 		triggertotalcost2 = document.querySelector( 'img#totalcost2'),
-		triggeroverallcost = document.querySelector( 'img#triggeroverallcost'),
+		triggeroverallcost = document.querySelector( 'img#overallcost'),
 
 		closemaintitle = document.querySelector( 'button#overlay-close-maintitle'),
 		closeprespilltitle = document.querySelector( 'button#overlay-close-prespilltitle'),
