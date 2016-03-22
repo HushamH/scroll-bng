@@ -58,4 +58,5 @@ html body #disposalpost {
 }
 html body .resize {
   position: absolute;
+  cursor:pointer;
 }
