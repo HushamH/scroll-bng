@@ -106,7 +106,7 @@ html body #labourcu1 {
 }
 html body #labourcu2 {
   top: 274%; 
-  left: 63%;
+  left: 62%;
 }
 html body #timecu1 {
   top: 307%; 
@@ -119,6 +119,34 @@ html body #timecu2 {
 html body #post-spilltitle {
   top: 338%;
 }
+html body #transportationpost1 {
+  top: 369%; 
+  left: 3%;
+}
+html body #transportationpost2 {
+  top: 369.5%; 
+  left: 61%;
+}
+html body #disposalpost1 {
+  top: 410%; 
+  left: 0%;
+}
+html body #disposalpost2 {
+  top: 420%; 
+  left: 61%;
+}
+html body #totalcost1 {
+  top: 480%; 
+  left: 2%;
+}
+html body #totalcost2 {
+  top: 485%; 
+  left: 64%;
+}
 html body #total-costtitle {
   top: 450%;
+}
+html body #overallcost {
+  top:519%;
+  left:2%;
 }
