@@ -17,7 +17,7 @@ $(document).ready(function() {
 		overlaytimecu = document.querySelector( 'div.overlay-timecu'),
 		overlaytimecu1 = document.querySelector( 'div.overlay-timecu1'),
 		overlaytimecu2 = document.querySelector( 'div.overlay-timecu2'),
-		overlaypostspilltitle = document.querySelector( 'div.overlay-overlaypostspilltitle'),
+		overlaypostspilltitle = document.querySelector( 'div.overlay-postspilltitle'),
 		overlaytransportationpost = document.querySelector( 'div.overlay-transportationpost'),
 		overlaytransportationpost1 = document.querySelector( 'div.overlay-transportationpost1'),
 		overlaytransportationpost2 = document.querySelector( 'div.overlay-transportationpost2'),
