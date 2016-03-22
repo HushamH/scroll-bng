@@ -106,15 +106,15 @@
     <img id="transportationpost2" class="hvr-pulse resize resizetransportationright" src="img/blank.png"/>
 
     <img id="disposalpost" class="hvr-float " src="img/blank.png" width="14%" />
-    <img id="disposalpost1" class="hvr-pulse resize resizemoneybag" src="img/blank.png"/>
-    <img id="disposalpost2" class="hvr-pulse resize resizemoneybag" src="img/blank.png"/>
+    <img id="disposalpost1" class="hvr-pulse resize resizewarehousingleft" src="img/blank.png"/>
+    <img id="disposalpost2" class="hvr-pulse resize resizewarehousingright" src="img/blank.png"/>
 
     <img id="total-costtitle" class="hvr-pulse resize resizetitle title" src="img/blank.png"/>
 
-    <img id="totalcost1" class="hvr-pulse resize resizemoneybag" src="img/blank.png"/>
+    <img id="totalcost1" class="hvr-pulse resize resizemoneybagbottom" src="img/blank.png"/>
     <img id="totalcost2" class="hvr-pulse resize resizemoneybag" src="img/blank.png"/>
 
-    <img id="overallcost" class="hvr-pulse resize" src="img/blank.png"/>
+    <img id="overallcost" class="hvr-float resize resizeoverall" src="img/blank.png"/>
 
     
 
@@ -600,6 +600,9 @@
                     var resizetransportationleft = bgWidth * 0.48;
                     var resizelabourleft = bgWidth * 0.45;
                     var resizetimeleft = bgWidth * 0.33;
+                    var resizetransportationright = bgWidth * 0.23;
+                    var resizemoneybagbottom = bgWidth * 0.35;
+                    var resizeoverall = bgWidth * 0.95;
 
                     var matcostpreTitleWidth = bgWidth * 0.4453; 
                     var warehousingpreTitleWidth = bgWidth * 0.4023;
@@ -616,6 +619,9 @@
                     $('.resizetransportationleft').css('width', resizetransportationleft);
                     $('.resizelabourleft').css('width', resizelabourleft);
                     $('.resizetimeleft').css('width', resizetimeleft);
+                    $('.resizetransportationright').css('width', resizetransportationright);
+                    $('.resizemoneybagbottom').css('width', resizemoneybagbottom);
+                    $('.resizeoverall').css('width', resizeoverall);
 
                     $('#matcostpre').css('left', matcostpreTitleWidth);
                     $('#warehousingpre').css('left', warehousingpreTitleWidth);
