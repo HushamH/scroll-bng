@@ -593,6 +593,8 @@
                 function updateWidth() {
                     var bgWidth = $('#newbg1').width();
 
+                    var resize = bgWidth * 0.78125; 
+
                     var matcostpreTitleWidth = bgWidth * 0.4453; 
                     var warehousingpreTitleWidth = bgWidth * 0.4023;
                     var transportationcuTitleWidth = bgWidth * 0.3867;
@@ -601,6 +603,7 @@
                     var transportationpostTitleWidth = bgWidth * 0.3867;
                     var disposalpostTitleWidth = bgWidth * 0.4375; 
 
+                    $('.resize').css('transform', 'scale(' + resize + ')');
                     $('#matcostpre').css('left', matcostpreTitleWidth);
                     $('#warehousingpre').css('left', warehousingpreTitleWidth);
                     $('#transportationcu').css('left', transportationcuTitleWidth);
